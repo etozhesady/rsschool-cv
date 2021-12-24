@@ -27,3 +27,27 @@ My strong point is curiosity and team playing.
 - Node.js
 - ReactJS
 - Git/Github
+
+---
+
+## Code example
+
+### Fake Binary KATA from CODEWARS:
+
+**Description:**
+_Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string._
+
+```javascript
+function fakeBin(x) {
+  let res = x.split("");
+
+  for (let i = 0; i < res.length; i++) {
+    if (res[i] > 4) {
+      res[i] = 1;
+    } else {
+      res[i] = 0;
+    }
+  }
+  return res.join("");
+}
+```
