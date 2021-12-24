@@ -60,3 +60,10 @@ function fakeBin(x) {
 Faculty of Information Technology
 Departament Software for computer systems
 Software engineering**
+
+---
+
+### Languages:
+
+- **Russian:** native speaker.
+- **Englihs:** B1
