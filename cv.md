@@ -51,3 +51,12 @@ function fakeBin(x) {
   return res.join("");
 }
 ```
+
+---
+
+### Education
+
+**Kyrgyz State Technical University named after I.Razzakov
+Faculty of Information Technology
+Departament Software for computer systems
+Software engineering**
