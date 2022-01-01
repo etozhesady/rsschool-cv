@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid red;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper {
+  position: relative;
+  width: 1152px;
+  height: 1700px;
+  border: solid red;
+
+  // border: solid red;
+}
+
+.menu {
+  position: absolute;
+  width: 558px;
+  height: 45px;
+  left: 293px;
+  top: 17px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  border: solid red;
+
+  /* identical to box height */
+
+  text-align: center;
+
+  ul {
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  li {
+    display: inline-block;
+    padding: 0px 16px;
+  }
+}
+
+.chel {
+  position: absolute;
+  margin: 0;
+  width: 407px;
+  height: 407px;
+  top: 70px;
+  left: 24px;
+  border: solid red;
+  animation: circle 3s linear infinite;
+  @keyframes circle {
+    0% {
+      transform: rotate(0deg) translate(-15px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translate(-15px) rotate(-360deg);
+    }
+  }
+}
+
+.hand {
+  position: absolute;
+  margin: 0;
+  width: 362px;
+  height: 362px;
+  left: 769px;
+  top: 338px;
+  border: solid red;
+
+  img {
+    width: 362px;
+  }
+}
+
+.mainText {
+  position: absolute;
+  left: 407px;
+  top: 202px;
+  width: 330px;
+  height: 162px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 200px;
+  text-align: center;
+
+  line-height: 77px;
+  border: solid red;
+
+  color: #ffffff;
+
+  h1 {
+    margin: 0;
+  }
+}
+
+.secondaryText {
+  position: absolute;
+  width: 543px;
+  height: 29px;
+  left: 293px;
+  top: 426px;
+  border: solid red;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+p {
+  margin: 0;
+}
+
+.btns {
+  position: relative;
+  width: 322px;
+  height: 49px;
+  left: 415px;
+  top: 525px;
+  border: solid red;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  .btnAboutMe {
+    width: 113px;
+    height: 49px;
+    background: #fdb827;
+    border-radius: 8px;
+    margin-right: 11px;
+
+    a {
+      position: absolute;
+      margin: 15px 18px;
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      text-decoration: none;
+      color: #000000;
+    }
+  }
+
+  .btnPortofolios {
+    position: absolute;
+    width: 198px;
+    height: 49px;
+
+    background: rgba(255, 255, 255, 0.13);
+    border-radius: 8px;
+
+    a {
+      position: absolute;
+      width: 167px;
+      height: 19px;
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      text-decoration: none;
+      margin: 15px;
+      color: #ffffff;
+    }
+  }
+}
