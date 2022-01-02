@@ -4,7 +4,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: solid red;
 
   font-family: Inter;
   font-style: normal;
@@ -18,9 +17,7 @@ body::-webkit-scrollbar {
 .wrapper {
   position: relative;
   width: 1152px;
-  height: 3000px;
-
-  // border: solid red;
+  height: 3700px;
 
   footer {
     position: absolute;
@@ -31,7 +28,6 @@ body::-webkit-scrollbar {
     right: -177px;
     height: 40px;
     bottom: 7px;
-    // border: solid red;
     p {
       margin-top: 5px;
       font-weight: normal;
@@ -83,7 +79,6 @@ header {
   position: relative;
   top: 17px;
   height: 45px;
-  // border: solid red;
 }
 .menu {
   position: relative;
@@ -91,9 +86,8 @@ header {
   height: 45px;
   left: 293px;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 17px;
-  // border: solid red;
 
   text-align: center;
 
@@ -117,7 +111,6 @@ header {
   height: 407px;
   top: 70px;
   left: 24px;
-  // border: solid red;
   animation: circle 3s linear infinite;
   @keyframes circle {
     0% {
@@ -135,7 +128,6 @@ header {
   width: 362px;
   height: 362px;
   left: 769px;
-  // border: solid red;
 
   img {
     width: 362px;
@@ -203,7 +195,6 @@ header {
   height: 29px;
   top: 150px;
   left: auto;
-  // border: solid red;
 
   font-weight: 600;
   font-size: 24px;
@@ -221,7 +212,6 @@ p {
   height: 49px;
   bottom: -260px;
   left: 110px;
-  // border: solid red;
 
   ul {
     margin: 0;
@@ -301,7 +291,6 @@ main {
     width: 493px;
     left: 375px;
     top: 106px;
-    // border: solid red;
   }
 
   .avatar {
@@ -310,7 +299,6 @@ main {
     left: 46px;
     width: 323px;
     height: 323px;
-    // border: solid red;
     img {
       width: 323px;
       height: 323px;
@@ -342,7 +330,6 @@ main {
   position: relative;
   display: block;
   height: 750px;
-  border: solid red;
   margin: 10px 0;
 
   .contactsTitle {
@@ -351,7 +338,6 @@ main {
     height: 57px;
     left: 307px;
     top: 114px;
-    border: solid red;
     h2 {
       margin: 0;
       font-weight: bold;
@@ -365,12 +351,11 @@ main {
   }
 
   .contactsMan {
-    position: relative;
+    position: absolute;
     width: 263px;
     height: 468px;
-    left: 24px;
-    top: 116px;
-    border: solid red;
+    right: 24px;
+    top: 249px;
     img {
       width: 263px;
       height: 468px;
@@ -381,9 +366,8 @@ main {
     position: absolute;
     width: 650px;
     height: 400px;
-    left: 307px;
+    left: 57px;
     top: 290px;
-    border: solid red;
     h2 {
       margin: 0;
       font-weight: bold;
@@ -409,6 +393,154 @@ main {
       top: 9px;
       width: 41px;
       height: 41px;
+    }
+  }
+}
+
+.skills {
+  position: relative;
+  display: block;
+  height: 900px;
+  margin: 10px 0;
+
+  h2 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 58px;
+  }
+  .skillsTitle {
+    position: relative;
+    width: 211px;
+    height: 113px;
+    margin-top: 15px;
+    left: 467px;
+  }
+
+  .skillList {
+    position: absolute;
+    width: 311px;
+    height: 313px;
+    top: 200px;
+    right: 16px;
+
+    li {
+      font-size: 30px;
+    }
+  }
+
+  .project {
+    position: absolute;
+    width: 463px;
+    height: 400px;
+    top: 200px;
+
+    h2 {
+      position: absolute;
+      left: 57px;
+    }
+    h3 {
+      position: absolute;
+      top: 80px;
+      left: 57px;
+    }
+
+    .post {
+      position: absolute;
+      width: 463px;
+      height: 181px;
+      top: 110px;
+
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.35);
+      box-sizing: border-box;
+      border-radius: 19px;
+
+      h3 {
+        position: absolute;
+        width: 257px;
+        height: 46px;
+        left: 260px;
+        top: 19px;
+
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 17px;
+
+        color: #ffffff;
+      }
+
+      .projDescr {
+        position: absolute;
+        width: 257px;
+        height: 55px;
+        right: 13px;
+        top: 58px;
+      }
+
+      .projectImg {
+        position: absolute;
+        width: 181px;
+        height: 181px;
+        left: 0;
+        top: 0px;
+
+        background: url(assets/img/projectScreen.png);
+        border: 1px solid rgba(255, 255, 255, 0.35);
+        box-sizing: border-box;
+        border-radius: 19px;
+      }
+
+      .readMore {
+        position: absolute;
+        display: inline;
+
+        width: 100px;
+        height: 20px;
+        bottom: 15px;
+        left: 193px;
+
+        a {
+          text-decoration: none;
+        }
+
+        p {
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 15px;
+
+          color: #ffffff;
+        }
+
+        img {
+          position: absolute;
+          margin: 0;
+          width: 18px;
+          height: 18px;
+          top: 0px;
+          right: 0px;
+        }
+      }
+    }
+  }
+
+  .codeExmpl {
+    position: relative;
+    top: 400px;
+    left: 58px;
+    margin: 15px 0px 15px 0px;
+    width: 1050px;
+    height: 400px;
+
+    p {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 15px;
+    }
+
+    pre {
+      width: 310px;
+      background-color: rgb(70, 70, 70);
     }
   }
 }

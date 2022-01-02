@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="styles/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
@@ -17,11 +17,10 @@
             <header>
                 <nav class="menu">
                     <ul>
-                        <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
                         <li><a href="#portfolios">Portfolios</a></li>
-                        <li><a href="#journey">Journey</a></li>
+                        <li><a href="#skills">Skills</a></li>
                     </ul>
                 </nav>
             </header>
@@ -48,19 +47,19 @@
             </div>
             
             <div class="hand">
-                <img src="/assets/img/Saly-8.png" alt="">
+                <img src="assets/img/Saly-8.png" alt="">
             </div>
         </main>
 
-        <section class="aboutMe">
-            <div class="aboutTitle" id="about">
+        <section class="aboutMe" id="about">
+            <div class="aboutTitle">
                 <h2>I’m Anvar Sadyrov</h2>
                 <h2 class="yellowText">Frontend</h2> <h2>&nbsp;Programmer</h2>
                 <h2 class="yellowText">UI/UX</h2> <h2>&nbsp;Designer</h2>
             </div>
 
             <div class="avatar">
-                <img src="/assets/img/avatar.png">
+                <img src="assets/img/avatar.png">
             </div>
           
             <div class="aboutText">
@@ -85,23 +84,78 @@
             </div>
         </section>
 
-        <section class="contacts">
+        <section class="contacts" id="contacts">
             <div class="contactsTitle">
                 <h2>You can reach me any time <i class="em em-smile" aria-role="presentation" aria-label="SMILING FACE WITH OPEN MOUTH AND SMILING EYES"></i></h2>
             </div>
 
             <div class="contactsMan">
-                <img src="/assets/img/Saly-14.png" alt="">
+                <img src="assets/img/Saly-14.png" alt="">
             </div>
 
             <div class="contactsText">
                 <h2 class="yellowText">My contacts:</h2>
                 <ul>
-                    <li> <img src="/assets/img/Telegram.png" alt="telegram logo"> Telegram: <a href="https://t.me/etozhesady">etozhesady</a></li>
-                    <li> <img src="/assets/img/Github.png" alt="github logo"> GitHub: <a href="https://github.com/etozhesady">etozhesady</a></li>
-                    <li> <img src="/assets/img/Discord.png" alt="discord logo"> Discord: <a href="https://discordapp.com/users/545667516446408714/">etozhesady#2970</a></li>
-                    <li> <img src="/assets/img/Gmail.png" alt="gmail logo"> Mail: sadyrovanvar@gmail.com</li>
+                    <li> <img src="assets/img/Telegram.png" alt="telegram logo"> Telegram: <a href="https://t.me/etozhesady">etozhesady</a></li>
+                    <li> <img src="assets/img/Github.png" alt="github logo"> GitHub: <a href="https://github.com/etozhesady">etozhesady</a></li>
+                    <li> <img src="assets/img/Discord.png" alt="discord logo"> Discord: <a href="https://discordapp.com/users/545667516446408714/">etozhesady#2970</a></li>
+                    <li> <img src="assets/img/Gmail.png" alt="gmail logo"> Mail: sadyrovanvar@gmail.com</li>
                 </ul>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <div class="skillsTitle">
+                <h2>Skills Portfolio</h2>
+            </div>
+            <div class="skillList">
+                <h2>Main skills</h2>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>CSS</li>
+                    <li>HTML</li>
+                    <li>React.js</li>
+                    <li>Node.js</li>
+                </ul>
+            </div>
+
+            <div class="project" id="portfolios">
+                <h2>Project</h2>
+                <div class="post">
+                    <h3>React Sneakers</h3>
+                    <div class="projectImg">
+                    </div>
+                    <div class="projDescr">
+                        <p>Pet project.<br>
+                        E-commerce selling sneakers
+                        </p>
+                    </div>
+                    <div class="readMore">
+                        <a href="https://github.com/etozhesady/reactsneakers"><p>Read More</p> <img src="assets/img/link_icon.svg" alt=""> </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="codeExmpl">
+                <h2>Code example</h2>
+                <p>Fake Binary KATA from CODEWARS:<br>
+                    Description: Given a string of digits, you should replace any digit below 5 with ‘0’ and any digit 5 and above with ‘1’. Return the resulting string.</p>
+                    <code>
+                        <pre>
+function fakeBin(x) {
+    let res = x.split("");
+    
+    for (let i = 0; i < res.length; i++) {
+        if (res[i] > 4) {
+        res[i] = 1;
+        } else {
+        res[i] = 0;
+        }
+    }
+    return res.join("");
+}
+                        </pre>  
+                    </code>
             </div>
         </section>
 
@@ -111,10 +165,10 @@
             </div>
             <div class="center">
                 <div class="ghLogo">
-                    <a href="https://github.com/etozhesady"><img src="/assets/img/black.svg" alt="GitHub logo"></a>
+                    <a href="https://github.com/etozhesady"><img src="assets/img/black.svg" alt="GitHub logo"></a>
                 </div>
                 <div class="rsschoolLogo">
-                    <a href="https://rs.school/js/"><img src="/assets/img/rs_school_js.svg" alt="RS School logo"></a>
+                    <a href="https://rs.school/js/"><img src="assets/img/rs_school_js.svg" alt="RS School logo"></a>
                 </div>
             </div>
             <div class="right">
