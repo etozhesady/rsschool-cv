@@ -16,7 +16,7 @@ body::-webkit-scrollbar {
   width: 1152px;
   height: 2000px;
 
-  border: solid red;
+  // border: solid red;
 
   footer {
     position: absolute;
@@ -27,7 +27,7 @@ body::-webkit-scrollbar {
     right: -177px;
     height: 40px;
     bottom: 7px;
-    border: solid red;
+    // border: solid red;
     p {
       margin-top: 5px;
       font-family: Inter;
@@ -78,20 +78,23 @@ body::-webkit-scrollbar {
   }
 }
 
+header {
+  position: relative;
+  top: 17px;
+  height: 45px;
+  // border: solid red;
+}
 .menu {
-  position: absolute;
+  position: relative;
   width: 558px;
   height: 45px;
   left: 293px;
-  top: 17px;
   font-family: Inter;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
   // border: solid red;
-
-  /* identical to box height */
 
   text-align: center;
 
@@ -128,8 +131,8 @@ body::-webkit-scrollbar {
 }
 
 .hand {
-  position: absolute;
-  margin-top: 550px;
+  position: relative;
+  bottom: 167px;
   width: 362px;
   height: 362px;
   left: 769px;
@@ -137,14 +140,34 @@ body::-webkit-scrollbar {
 
   img {
     width: 362px;
+    animation: img 3s infinite;
+  }
+  @keyframes img {
+    0% {
+      transform: rotate(10deg) translateX(100px);
+    }
+    50% {
+      transform: translateX(-100px) rotate(-30deg);
+    }
+    100% {
+      transform: rotate(10deg) translateX(100px);
+    }
   }
 }
 
+.group1 {
+  position: relative;
+  top: 100px;
+  margin: 0 auto;
+  height: 600px;
+  width: 543px;
+}
+
 .mainText {
-  position: absolute;
-  left: 407px;
-  top: 202px;
-  width: 330px;
+  position: relative;
+  margin: 0 auto;
+  top: 0px;
+  width: 400px;
   height: 162px;
 
   font-family: Inter;
@@ -155,21 +178,36 @@ body::-webkit-scrollbar {
   text-align: center;
 
   line-height: 77px;
-  // border: solid red;
 
   color: #ffffff;
 
   h1 {
     margin: 0;
   }
+  i {
+    width: 64px;
+    animation: i 3s infinite;
+  }
+
+  @keyframes i {
+    0% {
+      transform: rotate(10deg);
+    }
+    50% {
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(10deg);
+    }
+  }
 }
 
 .secondaryText {
-  position: absolute;
+  position: relative;
   width: 543px;
   height: 29px;
-  left: 293px;
-  top: 426px;
+  top: 150px;
+  left: auto;
   // border: solid red;
 
   font-family: Inter;
@@ -190,8 +228,8 @@ p {
   position: relative;
   width: 322px;
   height: 49px;
-  left: 415px;
-  top: 525px;
+  bottom: -260px;
+  left: 110px;
   // border: solid red;
 
   ul {
@@ -250,11 +288,10 @@ p {
 
 main {
   height: 960px;
-  border: solid red;
 }
 
 section {
   height: 700px;
   border: solid red;
-  margin: 10px;
+  margin: 10px 0;
 }
