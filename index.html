@@ -123,7 +123,8 @@
                 <h2>Project</h2>
                 <div class="post">
                     <h3>React Sneakers</h3>
-                    <div class="projectImg"></div>
+                    <div class="projectImg">
+                    </div>
                     <div class="projDescr">
                         <p>Pet project.<br>
                         E-commerce selling sneakers
@@ -133,6 +134,28 @@
                         <a href="https://github.com/etozhesady/reactsneakers"><p>Read More</p> <img src="/assets/img/link_icon.svg" alt=""> </a>
                     </div>
                 </div>
+            </div>
+
+            <div class="codeExmpl">
+                <h2>Code example</h2>
+                <p>Fake Binary KATA from CODEWARS:<br>
+                    Description: Given a string of digits, you should replace any digit below 5 with ‘0’ and any digit 5 and above with ‘1’. Return the resulting string.</p>
+                    <code>
+                        <pre>
+function fakeBin(x) {
+    let res = x.split("");
+    
+    for (let i = 0; i < res.length; i++) {
+        if (res[i] > 4) {
+        res[i] = 1;
+        } else {
+        res[i] = 0;
+        }
+    }
+    return res.join("");
+}
+                        </pre>  
+                    </code>
             </div>
         </section>
 

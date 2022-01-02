@@ -17,7 +17,7 @@ body::-webkit-scrollbar {
 .wrapper {
   position: relative;
   width: 1152px;
-  height: 3400px;
+  height: 3700px;
 
   footer {
     position: absolute;
@@ -400,7 +400,7 @@ main {
 .skills {
   position: relative;
   display: block;
-  height: 750px;
+  height: 900px;
   margin: 10px 0;
 
   h2 {
@@ -499,9 +499,11 @@ main {
         height: 20px;
         bottom: 15px;
         left: 193px;
+
         a {
           text-decoration: none;
         }
+
         p {
           font-weight: 500;
           font-size: 15px;
@@ -509,6 +511,7 @@ main {
 
           color: #ffffff;
         }
+
         img {
           position: absolute;
           margin: 0;
@@ -518,6 +521,26 @@ main {
           right: 0px;
         }
       }
+    }
+  }
+
+  .codeExmpl {
+    position: relative;
+    top: 400px;
+    left: 58px;
+    margin: 15px 0px 15px 0px;
+    width: 1050px;
+    height: 400px;
+
+    p {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 15px;
+    }
+
+    pre {
+      width: 310px;
+      background-color: rgb(70, 70, 70);
     }
   }
 }
