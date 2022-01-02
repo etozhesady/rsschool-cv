@@ -1,0 +1,414 @@
+body {
+  margin: 0;
+  background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid red;
+
+  font-family: Inter;
+  font-style: normal;
+  color: #ffffff;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.wrapper {
+  position: relative;
+  width: 1152px;
+  height: 3000px;
+
+  // border: solid red;
+
+  footer {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+
+    width: 1500px;
+    right: -177px;
+    height: 40px;
+    bottom: 7px;
+    // border: solid red;
+    p {
+      margin-top: 5px;
+      font-weight: normal;
+      font-size: 26px;
+    }
+  }
+
+  .left {
+    position: absolute;
+    height: 40px;
+    left: 24px;
+  }
+
+  .center {
+    width: 200px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .right {
+    position: absolute;
+    height: 40px;
+    right: 24px;
+  }
+
+  .ghLogo {
+    margin: 0 auto 0 auto;
+    height: 40px;
+    width: 26px;
+    img {
+      height: 40px;
+      width: 40px;
+    }
+  }
+
+  .rsschoolLogo {
+    margin: 0 auto 0 auto;
+    height: 40px;
+    width: 108x;
+    img {
+      height: 40px;
+      filter: invert(100%);
+    }
+  }
+}
+
+header {
+  position: relative;
+  top: 17px;
+  height: 45px;
+  // border: solid red;
+}
+.menu {
+  position: relative;
+  width: 558px;
+  height: 45px;
+  left: 293px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  // border: solid red;
+
+  text-align: center;
+
+  ul {
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  li {
+    display: inline-block;
+    padding: 0px 16px;
+  }
+}
+
+.chel {
+  position: absolute;
+  margin: 0;
+  width: 407px;
+  height: 407px;
+  top: 70px;
+  left: 24px;
+  // border: solid red;
+  animation: circle 3s linear infinite;
+  @keyframes circle {
+    0% {
+      transform: rotate(0deg) translate(-15px) rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg) translate(-15px) rotate(-360deg);
+    }
+  }
+}
+
+.hand {
+  position: relative;
+  bottom: 167px;
+  width: 362px;
+  height: 362px;
+  left: 769px;
+  // border: solid red;
+
+  img {
+    width: 362px;
+    animation: img 3s infinite;
+  }
+  @keyframes img {
+    0% {
+      transform: rotate(10deg) translateX(100px);
+    }
+    50% {
+      transform: translateX(-100px) rotate(-30deg);
+    }
+    100% {
+      transform: rotate(10deg) translateX(100px);
+    }
+  }
+}
+
+.group1 {
+  position: relative;
+  top: 100px;
+  margin: 0 auto;
+  height: 600px;
+  width: 543px;
+}
+
+.mainText {
+  position: relative;
+  margin: 0 auto;
+  top: 0px;
+  width: 400px;
+  height: 162px;
+
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 200px;
+  text-align: center;
+
+  line-height: 77px;
+
+  h1 {
+    margin: 0;
+  }
+  i {
+    width: 64px;
+    animation: i 3s infinite;
+  }
+
+  @keyframes i {
+    0% {
+      transform: rotate(10deg);
+    }
+    50% {
+      transform: rotate(-10deg);
+    }
+    100% {
+      transform: rotate(10deg);
+    }
+  }
+}
+
+.secondaryText {
+  position: relative;
+  width: 543px;
+  height: 29px;
+  top: 150px;
+  left: auto;
+  // border: solid red;
+
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+}
+
+.btns {
+  position: relative;
+  width: 322px;
+  height: 49px;
+  bottom: -260px;
+  left: 110px;
+  // border: solid red;
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  .btnAboutMe {
+    width: 113px;
+    height: 49px;
+    background: #fdb827;
+    border-radius: 8px;
+    margin-right: 11px;
+
+    a {
+      position: absolute;
+      margin: 15px 18px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      text-decoration: none;
+      color: #000000;
+    }
+  }
+
+  .btnPortofolios {
+    position: absolute;
+    width: 198px;
+    height: 49px;
+
+    background: rgba(255, 255, 255, 0.13);
+    border-radius: 8px;
+
+    a {
+      position: absolute;
+      width: 167px;
+      height: 19px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      text-decoration: none;
+      margin: 15px;
+      color: #ffffff;
+    }
+  }
+}
+
+main {
+  height: 960px;
+}
+
+.yellowText {
+  color: #fdb827;
+}
+
+.aboutMe {
+  position: relative;
+  display: block;
+  height: 900px;
+  margin: 10px 0;
+
+  h2 {
+    display: inline;
+    margin: 0;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 54px;
+  }
+
+  .aboutTitle {
+    position: relative;
+    height: 155px;
+    width: 493px;
+    left: 375px;
+    top: 106px;
+    // border: solid red;
+  }
+
+  .avatar {
+    position: absolute;
+    top: 28px;
+    left: 46px;
+    width: 323px;
+    height: 323px;
+    // border: solid red;
+    img {
+      width: 323px;
+      height: 323px;
+    }
+  }
+
+  .aboutText {
+    position: absolute;
+    width: 1054px;
+    height: 400x;
+    left: 57px;
+    top: 375px;
+
+    p {
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 30px;
+
+      margin: 10px 0px;
+    }
+
+    li {
+      font-size: 20px;
+    }
+  }
+}
+
+.contacts {
+  position: relative;
+  display: block;
+  height: 750px;
+  border: solid red;
+  margin: 10px 0;
+
+  .contactsTitle {
+    position: relative;
+    width: 700px;
+    height: 57px;
+    left: 307px;
+    top: 114px;
+    border: solid red;
+    h2 {
+      margin: 0;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 58px;
+    }
+    i {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .contactsMan {
+    position: relative;
+    width: 263px;
+    height: 468px;
+    left: 24px;
+    top: 116px;
+    border: solid red;
+    img {
+      width: 263px;
+      height: 468px;
+    }
+  }
+
+  .contactsText {
+    position: absolute;
+    width: 650px;
+    height: 400px;
+    left: 307px;
+    top: 290px;
+    border: solid red;
+    h2 {
+      margin: 0;
+      font-weight: bold;
+      font-size: 45px;
+      line-height: 54px;
+    }
+    a {
+      text-decoration: none;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    li {
+      font-size: 34px;
+      line-height: 2;
+    }
+
+    img {
+      position: relative;
+      margin: 0;
+      top: 9px;
+      width: 41px;
+      height: 41px;
+    }
+  }
+}
